@@ -12,7 +12,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -22,9 +22,9 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
-    </div>
+      <Footer />
+    </>
   );
 }
 
